@@ -4,9 +4,9 @@
 image: gitpod/workspace-java-17
 
 tasks:
-  - name: Maven Build
-    init: mvn install -DskipTests=false
   - name: Install avn CLI
     init: pip install aiven-client
+  - name: Open Readme
+    init: gp open README.md
 
 
